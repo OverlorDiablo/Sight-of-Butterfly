@@ -1,0 +1,63 @@
+.google-map {
+  margin-bottom: 20px;
+  padding: 0 100px;
+}
+
+.google-map iframe {
+  border-radius: 10px;
+}
+
+@media (max-width: 1920px) {
+  .google-map {
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .google-map {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1291px) {
+  .google-map {
+    margin-bottom: 50px;
+  }
+
+  .google-map iframe {
+    height: 320px;
+  }
+}
+
+@media (max-width: 991px) {
+  .google-map {
+    padding: 0 100px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .google-map iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .google-map {
+    padding: 0 50px;
+  }
+
+  .google-map iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 410px) {
+  .google-map {
+    padding: 0 25px;
+  }
+
+  .google-map iframe {
+    height: 200px;
+  }
+}

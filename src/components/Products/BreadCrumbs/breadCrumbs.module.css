@@ -1,0 +1,60 @@
+.bread-crumbs {
+  padding: 30px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bread-crumbs a {
+  font-size: 14px;
+  color: #818181;
+  transition: all 0.3s ease 0s;
+}
+
+.bread-crumbs a:hover {
+  color: rgb(52, 206, 47);
+}
+
+.bread-crumbs p {
+  font-size: 16px;
+}
+
+.arrow,
+.arrow-1,
+.arrow-2 {
+  width: 20px;
+  margin: 0 5px;
+}
+
+@media (max-width: 575px) {
+  .bread-crumbs {
+    padding: 20px 0px;
+  }
+
+  .arrow {
+    transform: scale(-1, 1);
+  }
+
+  .arrow-1 {
+    transform: scale(-1, 1);
+  }
+
+  .arrow-2 {
+    display: none;
+  }
+
+  .catalog {
+    order: 2;
+  }
+
+  .catalog-2 {
+    display: none;
+  }
+
+  .product-item {
+    display: none;
+  }
+
+  .product-item-name {
+    display: none;
+  }
+}

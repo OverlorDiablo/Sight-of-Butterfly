@@ -1,0 +1,191 @@
+.footer {
+  width: 100%;
+  box-shadow: 5px 0 12px 0 rgb(32 33 36 / 100%);
+}
+
+.footer-container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-top {
+  width: 100%;
+  background-color: #2D3F45;
+}
+
+.contact-img {
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+}
+
+.footer-contacts h2 {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.footer-contacts__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.footer-contacts__gmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.footer-contacts__gmail p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-contacts__item p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-schedule h2 {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.footer-schedule p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: #324950;
+  text-align: center;
+}
+
+.footer-bottom h1 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 13px 0;
+}
+
+@media (max-width: 1291px) {
+  .footer-container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-container {
+    width: 650px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .footer-contacts h2 {
+    font-size: 16px;
+  }
+
+  .footer-contacts__item p {
+    font-size: 12px;
+  }
+
+  .footer-contacts__gmail p {
+    font-size: 12px;
+  }
+
+  .footer-schedule h2 {
+    font-size: 16px;
+  }
+
+  .footer-schedule p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-container {}
+
+  .footer-contacts h2 {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  .footer-contacts__item p {
+    font-size: 10px;
+  }
+
+  .footer-contacts__gmail p {
+    font-size: 10px;
+  }
+
+  .footer-schedule h2 {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  .footer-schedule p {
+    font-size: 10px;
+  }
+
+  .contact-img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 410px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-contacts h2 {
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+
+  .footer-contacts__item {
+    padding: 0;
+  }
+
+  .footer-contacts__gmail {
+    padding: 25px 0;
+  }
+
+  .footer-contacts__gmail p {
+    font-size: 12px
+  }
+
+  .footer-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-schedule h2 {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,132 @@
+#c {
+  opacity: 0.8;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+
+.slider {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 500px;
+  margin-bottom: 15px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.slider .item img :global {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border: none !important;
+  box-shadow: none !important;
+  animation: zoom 10s ease-in-out;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideText {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+.slider-dots {
+  text-align: center;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slider-dots_item.active,
+.slider-dots_item:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+/* Анимация слайдов */
+.slider .item :global {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@media (max-width: 1291px) {
+  .slideText {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider {
+    height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    height: 300px;
+  }
+
+  .slideText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider {
+    height: 200px;
+  }
+}
+
+@media (max-width: 410px) {
+  .slideText {
+    font-size: 18px;
+  }
+}

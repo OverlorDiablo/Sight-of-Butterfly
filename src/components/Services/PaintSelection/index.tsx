@@ -1,0 +1,151 @@
+import React from 'react';
+import styles from './paintSelection.module.css';
+
+export const PaintSelection: React.FC = () => {
+  return (
+    <div className={styles['pouring-paint-price']}>
+      <h2>Стоимость розлива краски</h2>
+
+      <div className={styles['tech-doc__table']}>
+        <table>
+          <tbody>
+            <tr>
+              <th>Литры</th>
+              <th>AB</th>
+              <th>ABP</th>
+              <th>ABPP</th>
+              <th>AC</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>0.2</td>
+              <td>270</td>
+              <td>330</td>
+              <td>360</td>
+              <td>270</td>
+            </tr>
+            <tr>
+              <td>0.25</td>
+              <td>337</td>
+              <td>412</td>
+              <td>450</td>
+              <td>337</td>
+            </tr>
+            <tr>
+              <td>0.3</td>
+              <td>405</td>
+              <td>495</td>
+              <td>540</td>
+              <td>405</td>
+            </tr>
+            <tr>
+              <td>0.35</td>
+              <td>472</td>
+              <td>577</td>
+              <td>630</td>
+              <td>472</td>
+            </tr>
+            <tr>
+              <td>0.4</td>
+              <td>540</td>
+              <td>660</td>
+              <td>720</td>
+              <td>540</td>
+            </tr>
+            <tr>
+              <td>0.45</td>
+              <td>607</td>
+              <td>742</td>
+              <td>810</td>
+              <td>607</td>
+            </tr>
+            <tr>
+              <td>0.5</td>
+              <td>675</td>
+              <td>825</td>
+              <td>900</td>
+              <td>675</td>
+            </tr>
+            <tr>
+              <td>0.55</td>
+              <td>742</td>
+              <td>907</td>
+              <td>990</td>
+              <td>742</td>
+            </tr>
+            <tr>
+              <td>0.6</td>
+              <td>810</td>
+              <td>990</td>
+              <td>1080</td>
+              <td>810</td>
+            </tr>
+            <tr>
+              <td>0.65</td>
+              <td>877</td>
+              <td>1072</td>
+              <td>1170</td>
+              <td>877</td>
+            </tr>
+            <tr>
+              <td>0.7</td>
+              <td>945</td>
+              <td>1155</td>
+              <td>1260</td>
+              <td>945</td>
+            </tr>
+            <tr>
+              <td>0.75</td>
+              <td>1012</td>
+              <td>1237</td>
+              <td>1350</td>
+              <td>1012</td>
+            </tr>
+            <tr>
+              <td>0.8</td>
+              <td>1080</td>
+              <td>1320</td>
+              <td>1440</td>
+              <td>1080</td>
+            </tr>
+            <tr>
+              <td>0.85</td>
+              <td>1147</td>
+              <td>1402</td>
+              <td>1530</td>
+              <td>1147</td>
+            </tr>
+            <tr>
+              <td>0.9</td>
+              <td>1215</td>
+              <td>1485</td>
+              <td>1620</td>
+              <td>1215</td>
+            </tr>
+            <tr>
+              <td>0.95</td>
+              <td>1282</td>
+              <td>1567</td>
+              <td>1710</td>
+              <td>1282</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1350</td>
+              <td>1650</td>
+              <td>1800</td>
+              <td>1350</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className={styles['paint-type']}>
+        <p>AB - металлик</p>
+        <p>ABP - перламутр</p>
+        <p>ABPP - ксералик</p>
+        <p>AC - акрил</p>
+      </div>
+    </div>
+  );
+};

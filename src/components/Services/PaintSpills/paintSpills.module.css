@@ -1,0 +1,72 @@
+.service-info h2 {
+  color: rgb(7, 243, 7);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tech-doc__table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.tech-doc__table th {
+  background-color: #1f1f1f;
+}
+
+.tech-doc__table td {
+  font-size: 14px;
+}
+
+.tech-doc__table th,
+.tech-doc__table tr,
+.tech-doc__table td {
+  padding: 7px;
+  border: 1px solid #1f1f1f;
+}
+
+.tech-doc__table th,
+.tech-doc__table td {
+  text-align: center;
+  width: 20%;
+}
+
+.tech-doc__table tr:hover td {
+  background-color: #1f1f1f;
+}
+
+.paint-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 575px) {
+  .paint-type {
+    font-size: 12px;
+  }
+
+  .selection-price h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .tech-doc__table th,
+  .tech-doc__table tr,
+  .tech-doc__table td {
+    padding: 4px 1px;
+  }
+
+  .paint-type {
+    font-size: 9px;
+  }
+
+  .tech-doc__table table {
+    margin-bottom: 10px;
+  }
+
+  .selection-price h2 {
+    font-size: 18px;
+  }
+}

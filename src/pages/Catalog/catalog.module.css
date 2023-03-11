@@ -1,0 +1,171 @@
+.main {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.main-top {
+  width: 100%;
+  padding-top: 355px;
+  padding-bottom: 355px;
+  background: url(@/assets/img/pages/catalog/lamborgini_aventador.jpg) center;
+  background-size: cover;
+}
+
+.main-top__name {
+  width: 480px;
+  margin: 0 auto;
+  padding: 55px;
+  background: rgba(0, 0, 0, 0.692);
+  border-radius: 5px;
+}
+
+.main-top__name h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #0cff04;
+}
+
+.main-top__name p {
+  color: white;
+  margin-top: 50px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.main-container {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 33px;
+  row-gap: 24px;
+  padding-top: 100px;
+}
+
+.products-mob {
+  display: none;
+  row-gap: 24px;
+  column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media (max-width: 1920px) {
+  .main-top {
+    padding-top: 305px;
+    padding-bottom: 305px;
+  }
+
+  .main-container {
+    width: 1520px;
+  }
+
+  .products {
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .main-top {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .products {
+    width: 1262px;
+    margin: 0 auto;
+    column-gap: 46px;
+  }
+}
+
+@media (max-width: 1291px) {
+  .main {
+    padding-top: 55px;
+  }
+
+  .main-top {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .main-top__name {
+    padding: 30px;
+    width: 350px;
+  }
+
+  .main-top__name h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main-top__name p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .products {
+    width: 961px;
+    row-gap: 30px;
+    column-gap: 30.5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .products {
+    display: none;
+    width: 100%;
+  }
+
+  .products-mob {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-top__name {
+    width: 270px;
+  }
+
+  .products-mob {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 410px) {
+  .main-top__name {
+    width: 70%;
+  }
+
+  .main-top__name p {
+    text-align: center;
+  }
+
+  .products-mob {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}
