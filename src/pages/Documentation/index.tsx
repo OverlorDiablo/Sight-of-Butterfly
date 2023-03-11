@@ -14,7 +14,7 @@ export const Documentation: React.FC = () => {
           <h1>ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ</h1>
         </div>
       </div>
-      <div className={styles['pre-container']}>
+      <div className='pre-container'>
         <div className={styles['main-container']}>
           <div className={styles['tech-doc']}>
             <div className={styles['tech-doc__table']}>
