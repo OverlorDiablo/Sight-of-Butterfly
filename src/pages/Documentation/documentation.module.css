@@ -108,6 +108,10 @@
     font-size: 28px;
   }
 
+  .tech-doc {
+    margin-top: 15px;
+  }
+
   .tech-doc__table {
     padding: 35px 45px 15px;
   }
