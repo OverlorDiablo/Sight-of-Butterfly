@@ -57,6 +57,11 @@
   line-height: 1.3em;
 }
 
+.service-info .link-contacts {
+  font-size: 16px;
+  color: rgb(7, 243, 7);
+}
+
 .service-info ul {
   margin: 10px 0;
 }
