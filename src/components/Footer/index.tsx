@@ -5,6 +5,10 @@ import kyivstar from "@/assets/img/components/footer/Kyivstar-logo.png"
 import gmail from "@/assets/img/components/footer/gmail-logo.png"
 
 export const Footer: React.FC = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear()
+  }
+
   return (
     <footer className={styles['footer']}>
       <div className={styles['footer-top']}>
@@ -49,7 +53,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       <div className={styles['footer-bottom']}>
-        <h1>© ТОВ « Sight of Butterfly» 2021</h1>
+        <h1>© ТОВ « Sight of Butterfly» 2021-{getCurrentYear()}</h1>
       </div>
     </footer>
   );
