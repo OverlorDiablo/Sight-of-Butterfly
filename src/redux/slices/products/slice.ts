@@ -6,11 +6,15 @@ const initialState: ProductsSliceState = {
   products: [],
 };
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export const fetchProducts = createAsyncThunk<ProductItem[]>(
   'products/fetchProducts',
   async (_, { rejectWithValue }) => {
     try {
-      const { data } = await axios.get<ProductItem[]>('http://localhost:5000/products');
+      const { data } = await axios.get<ProductItem[]>(
+        `${apiUrl}/products`
+      );
       return data;
     } catch (error) {
       return rejectWithValue([]);
@@ -35,6 +39,6 @@ const productsSlice = createSlice({
   },
 });
 
-export const {} = productsSlice.actions;
+export const { } = productsSlice.actions;
 
 export default productsSlice.reducer;

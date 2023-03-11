@@ -6,12 +6,14 @@ const initialState: CategoriesSliceState = {
   categories: [],
 };
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export const fetchCategories = createAsyncThunk<CategoryItem[]>(
   'categories/fetchCategories',
   async (_, { rejectWithValue }) => {
     try {
       const { data } = await axios.get<CategoryItem[]>(
-        'http://localhost:5000/categories'
+        `${apiUrl}/categories`
       );
       return data;
     } catch (error) {
@@ -37,6 +39,6 @@ const categoriesSlice = createSlice({
   },
 });
 
-export const {} = categoriesSlice.actions;
+export const { } = categoriesSlice.actions;
 
 export default categoriesSlice.reducer;
