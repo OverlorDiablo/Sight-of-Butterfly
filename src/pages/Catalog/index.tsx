@@ -7,13 +7,13 @@ import styles from './catalog.module.css';
 export const Catalog: React.FC = () => {
   const { prevLocation } = useRouter();
   const { categories } = useAppSelector(({ categories }) => categories);
-  const [isMobile, setIsMobile] = React.useState(false);
+
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 991);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
   const preContainer = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
-    scrollToProducts();
-
     window.addEventListener('resize', onWindowResize);
 
     return () => {
@@ -25,6 +25,10 @@ export const Catalog: React.FC = () => {
     setIsMobile(windowWidth <= 991);
   }, [windowWidth]);
 
+  React.useEffect(() => {
+    scrollToProducts();
+  }, [isMobile]);
+
   const onWindowResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -35,14 +39,14 @@ export const Catalog: React.FC = () => {
     const productsPosition =
       (preContainer?.current as HTMLDivElement)?.offsetTop - headerHeigth;
 
-    setTimeout(() => {
-      if (prevLocation?.pathname.includes('catalog') && categories && !isMobile) {
+    if (prevLocation?.pathname.includes('catalog') && categories && !isMobile) {
+      setTimeout(() => {
         scrollTo({
           top: productsPosition,
           behavior: 'smooth',
         });
-      }
-    }, 0);
+      }, 0);
+    }
   };
 
   return (
